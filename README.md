@@ -13,7 +13,7 @@ I due router delle due sottoreti che fanno uso di IP privati implementano il NAT
 Sono presenti tre script python, quello denominato udp dev'essere eseguito da uno (o più) host di una delle due sottoreti private (o entrambe), semplicemente lo script manda dei datagrammi al server 9.0.0.2, che dovrà eseguire lo script udp2.py; questo si comporterà da server STUN, rispondendo ad ogni richiesta dell'host e indicandogli l'IP e la porta sorgente che il server ha rilevato, si potrà notare come la traduzione dell'indirizzo IP funziona correttamente. Successivamente, il server che esegue udp2.py invierà al server 9.0.0.3, che dovrà eseguire lo script udp3.py, un datagramma contenente i riferimenti all'host che ha contattato 9.0.0.2, quindi tenterà di rispondere direttamente all'host, tuttavia, poichè il NAT è a cono ristretto con restrizione sulle porte, non ci riuscirà. 
 
 
-Di seguito i comandi che devono essere eseguiti sul terminale (indico con # i commenti):
+Di seguito i comandi che devono essere eseguiti sul terminale (indico con # i commenti), se GitHub dovesse rompere la formattazione, si prega di far riferimento al file istruzioni:
 
 sudo python3 nat-network.py
 h0 ping server1 									#è possibile verificare che h0 può raggiungere il server pubblico server1, può raggiungere anche 														server2
