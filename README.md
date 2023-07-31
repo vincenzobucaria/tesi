@@ -30,7 +30,7 @@ python3 udp3.py
 #Sul terminale di h0:
 python3 udp.py
 
-#Come si potrà notare, h0 riceve la risposta soltanto dal server1, poichè appunto il NAT implementato è a cono ristretto e con restrizione sulla porta
+#Come si potrà notare, h0 riceve la risposta soltanto dal server1, poichè appunto il NAT implementato è a cono ristretto e con restrizione sulla porta.
 
 
 
