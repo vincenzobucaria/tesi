@@ -9,10 +9,10 @@ print("Invio il datagramma a: %s" % UDP_IP)
 print("alla porta: %s" % UDP_PORT)
 print("contenuto del messaggio: %s" % MESSAGE)
 
-sock = socket.socket(socket.AF_INET, # Internet
-                     socket.SOCK_DGRAM) # UDP
+sock = socket.socket(socket.AF_INET, 
+                     socket.SOCK_DGRAM) 
 
-sock.bind(("", 25565)) #Configurare con IP della macchina e porta 
+sock.bind(("", 25565))
 
 #sock.bind(("localhost", 5011))
 sock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
