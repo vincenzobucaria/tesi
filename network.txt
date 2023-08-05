@@ -1,12 +1,14 @@
-node0 lan0 full_cone
-node1 lan1 restricted_cone
+node0 lan0 port_restricted
+node1 lan1 full_cone
 node4 lan0 full_cone
 node5 lan1 restricted_cone
 node6 lan1 full_cone
-node7 lan1 restricted_cone
+node7 lan1 full_cone
 node10 lan2 public
 node11 lan2 public
 node13 lan2 public
 node12 lan3 public
 node13 lan4 public
 node14 lan4 public
+node20 lan5 restricted_cone
+node21 lan6 symmetric
