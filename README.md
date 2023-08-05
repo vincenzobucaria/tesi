@@ -3,10 +3,10 @@
 Lo script <b>network-generator.py</b> permette di automatizzare il processo di costruzione della rete,
 mediante il file di testo network.txt è possibile definire la topologia della rete, ogni riga deve adottare il seguente schema
 
-NODENAME NODELAN SUBNET_TYPE
+NODENAME LAN SUBNET_TYPE
 
 <b>NODENAME</b> specifica il nome del nodo <br>
-<b>NODELAN</b> specifica la subnet di appartenenza del nodo <br>
+<b>LAN</b> specifica la subnet di appartenenza del nodo <br>
 <b>SUBNET_TYPE</b> è un parametro scelto tra [public, full_cone, port_restricted, restricted_cone, symmetric]. Questo parametro viene attribuito alla LAN specificata
 alla prima dichiarazione, dichiarazioni incongruenti successive saranno ignorate.
 <b>SUBNET_TYPE</b> può essere:
