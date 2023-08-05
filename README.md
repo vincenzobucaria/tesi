@@ -1,3 +1,35 @@
+<b>UPDATE</b>
+
+Lo script <b>network-generator.py</b> permette di automatizzare il processo di costruzione della rete,
+mediante il file di testo network.txt è possibile definire la topologia della rete, ogni riga deve adottare il seguente schema
+
+NODENAME NODELAN SUBNET_TYPE
+
+<b>NODENAME</b> specifica il nome del nodo <br>
+<b>NODELAN</b> specifica la subnet di appartenenza del nodo <br>
+<b>SUBNET_TYPE</b> è un parametro scelto tra [public, full_cone, port_restricted, restricted_cone, symmetric]. Questo parametro viene attribuito alla LAN specificata
+alla prima dichiarazione, dichiarazioni incongruenti successive saranno ignorate.
+<b>SUBNET_TYPE</b> può essere:
+1) <b>public</b>, in questo caso a ogni nodo della sottorete è assegnato un IP pubblico, dunque ogni nodo è raggiungibile dall'esterno.
+2) <b>symmetric</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat simmetrico
+3) <b>full_cone</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono pieno
+4) <b>restricted_cone</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono ristretto
+5) <b>port_restricted</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono ristretto con restrizione sulla porta
+   
+
+
+
+________________________________________________________________________
+
+
+
+
+
+
+
+<b>nat-network.py</b>
+
+
 La rete è composta da 3 sottoreti, due di queste sono sottoreti che utilizzano IP privati della classe 10.0.0.x, la restante sottorete ospita due server muniti di IP pubblici (9.0.0.2 e 9.0.0.3), questi potranno essere contattati.
 
 
