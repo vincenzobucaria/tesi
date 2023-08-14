@@ -4,6 +4,9 @@ Lo script <b>network-generator.py</b> permette di automatizzare il processo di c
 mediante il file di testo network.txt è possibile definire la topologia della rete, il file properties.txt permette di definire
 le proprietà di connessione tra i vari router di frontiera.
 
+Il collegamento tra i router di frontiera è di tipo full-mesh al fine di poter impostare a piacimento i valori di banda e latenza
+nel collegamento tra due sottoreti.
+
 
 <b>La sintassi di ogni riga del file network.txt deve essere la seguente:</b>
 
