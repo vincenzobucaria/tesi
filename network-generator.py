@@ -365,7 +365,7 @@ def network_setup(topo, net):
 
                 #print(cmd1, cmd2, cmd3)
 
-                net.get(topo.routersdict[lan]).cmd("iptables -A FORWARD -i r{}".format(x)+"-eth0 -o r{}".format(x)+"-eth1 -j ACCEPT")
+                #net.get(topo.routersdict[lan]).cmd("iptables -A FORWARD -i r{}".format(x)+"-eth0 -o r{}".format(x)+"-eth1 -j ACCEPT")
             x = x+1
 
             
