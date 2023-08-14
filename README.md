@@ -26,7 +26,7 @@ LAN1 LAN2 RITARDO BANDA
 
 <b>LAN1</b> specifica la prima LAN target<br>
 <b>LAN2</b> specifica la seconda LAN target<br>
-<b>RITARDO</b> specifica la latenza che sussiste tra i router di frontiera delle due LAN target. Il valore è in millisecondi (ms).
+<b>RITARDO</b> specifica la latenza che sussiste tra i router di frontiera delle due LAN target. Il valore è in millisecondi (ms)<br>
 <b>BANDA</b> specifica la massima larghezza di banda disponibile nell'arco che collega le due LAN target.
 
    
