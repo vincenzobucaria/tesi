@@ -27,10 +27,10 @@ alla prima dichiarazione, dichiarazioni incongruenti successive saranno ignorate
 
 LAN1 LAN2 RITARDO BANDA
 
-1)<b>LAN1</b> specifica la prima LAN target<br>
-2)<b>LAN2</b> specifica la seconda LAN target<br>
-3)<b>RITARDO</b> specifica la latenza che sussiste tra i router di frontiera delle due LAN target. Il valore è automaticamente inteso in millisecondi (ms)<br>
-4)<b>BANDA</b> specifica la massima larghezza di banda disponibile nell'arco che collega le due LAN target. Il valore è automaticamente inteso in Mbps. <br>
+1) <b>LAN1</b> specifica la prima LAN target<br>
+2) <b>LAN2</b> specifica la seconda LAN target<br>
+3) <b>RITARDO</b> specifica la latenza che sussiste tra i router di frontiera delle due LAN target. Il valore è automaticamente inteso in millisecondi (ms)<br>
+4) <b>BANDA</b> specifica la massima larghezza di banda disponibile nell'arco che collega le due LAN target. Il valore è automaticamente inteso in Mbps. <br>
 
 Gli archi della rete non impostati possiedono valori di banda e latenza di default.
 
