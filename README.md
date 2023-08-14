@@ -29,6 +29,8 @@ LAN1 LAN2 RITARDO BANDA
 <b>RITARDO</b> specifica la latenza che sussiste tra i router di frontiera delle due LAN target. Il valore è in millisecondi (ms)<br>
 <b>BANDA</b> specifica la massima larghezza di banda disponibile nell'arco che collega le due LAN target.
 
+Gli archi della rete non impostati possiedono valori di banda e latenza di default.
+
    
 ________________________________________________________________________
 
