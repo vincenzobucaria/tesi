@@ -1,7 +1,11 @@
 <b>UPDATE</b>
 
 Lo script <b>network-generator.py</b> permette di automatizzare il processo di costruzione della rete,
-mediante il file di testo network.txt è possibile definire la topologia della rete, ogni riga deve adottare il seguente schema
+mediante il file di testo network.txt è possibile definire la topologia della rete, il file properties.txt permette di definire
+le proprietà di connessione tra i vari router di frontiera.
+
+
+<b>La sintassi di ogni riga del file network.txt deve essere la seguente:</b>
 
 NODENAME LAN SUBNET_TYPE
 
@@ -15,10 +19,17 @@ alla prima dichiarazione, dichiarazioni incongruenti successive saranno ignorate
 3) <b>full_cone</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono pieno
 4) <b>restricted_cone</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono ristretto
 5) <b>port_restricted</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono ristretto con restrizione sulla porta
+
+<b>La sintassi di ogni riga del file properties.txt deve essere la seguente:</b>
+
+LAN1 LAN2 RITARDO BANDA
+
+<b>LAN1</b> specifica la prima LAN target<br>
+<b>LAN2</b> specifica la seconda LAN target<br>
+<b>RITARDO</b> specifica la latenza che sussiste tra i router di frontiera delle due LAN target. Il valore è in millisecondi (ms).
+<b>BANDA</b> specifica la massima larghezza di banda disponibile nell'arco che collega le due LAN target.
+
    
-
-
-
 ________________________________________________________________________
 
 
