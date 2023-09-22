@@ -213,6 +213,24 @@ inoltre è necessario sostituire ```[ip server]``` con l'IP del signaling server
 
 Se il tunnel-rtc è stato creato correttamente si otterrà un output simile
 
+![Testo alternativo](tunnel-example.png)
+
+
+A questo punto sarà possibile esporre sul ```nodo1v del tunnel un servizio sulla porta destinazione indicata nel comando del client.
+Su ```nodo2```, ci si riferirà a ```localhost [porta destinazione]``` per connettersi al nodo server.
+Ad esempio, è possibile utilizzare netcat per verificare il funzionamento del tunnel.
+
+## Software di terze parti utilizzati
+
+1) Mininet (https://github.com/mininet/mininet)
+2) Moduli per implementare i vari tipi di NAT (https://github.com/xylophone21/netfilter-nattype), si ringrazia pubblicamente l'utente @xylophone21
+3) RTC tunnel e signaling server (https://github.com/pcimcioch/rtc-tunnel)
+   Precisazione: entrambi sono stati modificati per permetterne il funzionamento su Mininet
+4) STUN server (https://github.com/y-i/rfc5389-stun-server-python)
+
+
+
+
 
 
 
