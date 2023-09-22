@@ -1,0 +1,49 @@
+from enum import IntEnum
+
+
+class MsgClass(IntEnum):
+    REQUEST = 0
+    INDICATION = 1
+    SUCCESS_RESPONSE = 2
+    FAILURE_RESPONSE = 3
+
+
+class MethodType(IntEnum):
+    BINDING = 0x001
+
+    RESERVED_SHARED_SECRET = 0x002
+
+
+class AttrType(IntEnum):
+    '''
+    Comprehension-required range (0x0000-0x7FFF)
+    Comprehension-optional range (0x8000-0xFFFF)
+    '''
+    MAPPED_ADDRESS = 0x0001
+    USERNAME = 0x0006
+    MESSEAGE_INTEGRITY = 0x0008
+    ERROR_CODE = 0x0009
+    UNKNOWN_ATTRIBUTES = 0x000a
+    REALM = 0x0014
+    NONCE = 0x0015
+    XOR_MAPPED_ADDRESS = 0x0020
+
+    SOFTWARE = 0x8022
+    ALTERNATE_SERVER = 0x8023
+    FINGERPRINT = 0x8028
+
+    RESERVED_RESPONSE_ADDRESS = 0x0002
+    RESERVED_CHANGE_REQUEST = 0x0003
+    RESERVED_SOURCE_ADDRESS = 0x0004
+    RESERVED_CHANGED_ADDRESS = 0x0005
+    RESERVED_PASSWORD = 0x0007
+    RESERVED_REFLECTED_FORM = 0x000b
+
+
+class ErrorCodeType(IntEnum):
+    TRY_ALTERNATE = 300
+    BAD_REQUEST = 400
+    UNAUTHORIZED = 401
+    UNKNOWN_ATTRIBUTE = 420
+    STALE_NONCE = 438
+    SERVER_ERROR = 500

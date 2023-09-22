@@ -1,0 +1,4 @@
+aiortc
+asyncio
+requests
+websockets

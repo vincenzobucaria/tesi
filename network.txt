@@ -1,0 +1,5 @@
+node0 lan0 full_cone
+node1 lan0 full_cone
+node2 lan1 public SERVER
+node3 lan1 public SERVER
+node4 lan2 full_cone

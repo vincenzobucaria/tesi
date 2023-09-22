@@ -1,0 +1,4 @@
+lan0 lan1 60 1000
+lan0 lan2 60 1000
+lan2 lan1 30 1000
+
