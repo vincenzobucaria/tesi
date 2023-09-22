@@ -1,5 +1,0 @@
-node0 lan0 port_restricted
-node1 lan0 port_restricted
-node2 lan1 public
-node3 lan1 public
-node4 lan2 symmetric
