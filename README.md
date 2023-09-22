@@ -30,8 +30,9 @@ port restricted cone nat, restricted cone nat).
 
 ## Definizione della rete
 
+### Caratteristiche generali della rete
 E' possibile caratterizzare la rete andando a modificare il file di testo ```network.txt```.
-
+Al momento è presente un limite di 255 nodi istanziabili.
 La caratterizzazione permette di scegliere quanti nodi istanziare per ogni LAN,
 così come il tipo di NAT che il router di confine della LAN applicherà, mentre la topologia adottata è full-mesh per
 quanto riguarda i router che emulano internet. Questo tipo di topologia permette di definire valori di banda e latenza
@@ -51,7 +52,38 @@ a sua volta collegato direttamente con un router di frontiera (NON è applicato 
 
 Di seguito la rappresentazione grafica della rete definita di default nel file
 
-![Testo alternativo](default_topo)
+![Testo alternativo](default_topo.png)
+
+
+Il nome dei nodi è definibile a piacere, mentre il nome dei vari router e switch è generato automaticamente, i prefissi permettono di identificare la tipologia di router.   
+ Con ```ri``` ci si riferisce a ```router domestici```,  
+ ```r``` rappresenta il router dell'ISP  
+ ```re``` rappresenta un router di frontiera  
+
+### Struttura del file network.txt
+
+<b>La sintassi di ogni riga del file network.txt deve essere la seguente (i parametri tra [] sono opzionali:</b>
+
+NODENAME LAN SUBNET_TYPE [SERVER]
+
+<b>NODENAME</b> specifica il nome del nodo <br>
+<b>LAN</b> specifica la subnet di appartenenza del nodo <br>
+<b>SUBNET_TYPE</b> è un parametro scelto tra [public, full_cone, port_restricted, restricted_cone, symmetric]. Questo parametro viene attribuito alla LAN specificata
+alla prima dichiarazione, dichiarazioni incongruenti successive saranno ignorate.
+<b>SUBNET_TYPE</b> può essere:
+1) <b>public</b>, in questo caso a ogni nodo della sottorete è assegnato un IP pubblico, dunque ogni nodo è raggiungibile dall'esterno.
+2) <b>symmetric</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat simmetrico
+3) <b>full_cone</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono pieno
+4) <b>restricted_cone</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono ristretto
+5) <b>port_restricted</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono ristretto con restrizione sulla porta
+<b>SERVER</b> permette di flaggare uno specifico nodo come server
+
+
+
+ 
+    
+
+
 
 
 
