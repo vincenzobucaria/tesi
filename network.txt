@@ -1,5 +1,10 @@
-node0 lan0 full_cone
-node1 lan0 full_cone
-node2 lan1 public SERVER
-node3 lan1 public SERVER
-node4 lan2 full_cone
+IoT_node1 lan0 full_cone
+IoT_node2 lan0 full_cone
+IoT_node3 lan0 full_cone
+server lan1 public
+IoT_node4 lan2 full_cone
+IoT_node5 lan2 full_cone
+IoT_node6 lan2 full_cone
+IoT_node7 lan3 full_cone
+IoT_node8 lan3 full_cone
+IoT_node9 lan3 full_cone
