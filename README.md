@@ -81,10 +81,6 @@ alla prima dichiarazione, dichiarazioni incongruenti successive saranno ignorate
 4) <b>restricted_cone</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono ristretto
 5) <b>port_restricted</b>, ogni nodo ha un ip privato, il router di frontiera implementa il nat a cono ristretto con restrizione sulla porta   
 
-<b>SERVER</b> permette di flaggare uno specifico nodo come server
-
-Un nodo flaggato come server eseguirà automaticamente il signaling server, necessario per istaurare il tunnel rtc tra due nodi.
-Per via del namespace condiviso, è possibile identificare come server soltanto un nodo della rete.
 
 
 ### Il file properties.txt e la sua struttura
